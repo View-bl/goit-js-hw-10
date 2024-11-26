@@ -19,13 +19,17 @@ const options = {
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),
+  
   minuteIncrement: 1,
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
     if (selectedDate < new Date()) {
       iziToast.error({
-        title: 'Error',
+        title: '',
         message: 'Please choose a date in the future',
+        position: 'topRight',
+        timeout: 5000,
+       
       });
       refs.startButton.disabled = true;
     } else {
