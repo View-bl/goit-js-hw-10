@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+}
+.timer,
+.snackbar {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+
+.timer {
+    background-color: #4CAF50;
+}
+
+.snackbar {
+    background-color: #2196F3;
+}
+
+.timer:hover,
+.snackbar:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
